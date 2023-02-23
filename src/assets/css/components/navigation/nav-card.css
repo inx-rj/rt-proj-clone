@@ -1,0 +1,52 @@
+.nav-card-wrapper {
+  @apply relative;
+}
+
+.nav-card-wrapper .nav-card {
+  @apply text-main;
+}
+
+.nav-card-wrapper.disabled .nav-card {
+  @apply cursor-not-allowed bg-[#f3f3f3] dark:bg-[#1f2024];
+}
+
+.nav-card-wrapper.disabled .nav-card,
+.nav-card-wrapper.disabled .nav-card .info,
+.nav-card-wrapper.disabled .nav-card .title {
+  @apply text-dark-400;
+}
+
+.nav-card-wrapper:last-child .nav-card {
+  @apply border-b-0;
+}
+
+.nav-card {
+  @apply bg-color p-4 gap-4 flex cursor-pointer border-b border-color;
+}
+
+.nav-card .title {
+  @apply text-base font-normal mb-1;
+}
+
+.nav-card .info {
+  @apply text-sm text-info;
+}
+
+.nav-card-wrapper.active .nav-card,
+.nav-card.active {
+  @apply bg-theme/10 text-theme dark:text-theme border-b-theme/10;
+}
+.nav-card-wrapper.active .nav-card .title,
+.nav-card.active .title {
+  @apply text-theme dark:text-theme;
+}
+
+.nav-card-wrapper.active .nav-card::before,
+.nav-card.active::before {
+  content: "";
+  @apply absolute top-0 left-0 bottom-0 border-l-[3px] border-l-theme;
+}
+.nav-card-wrapper.active .nav-card .info,
+.nav-card.active .info {
+  @apply text-theme/70;
+}

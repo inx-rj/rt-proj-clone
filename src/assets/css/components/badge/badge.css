@@ -1,0 +1,103 @@
+.badge {
+  @apply px-4 text-xs py-1 rounded min-w-[80px] inline-flex justify-center;
+}
+
+.badge.badge-active,
+.badge.badge-success,
+.badge.badge-approved,
+.badge.badge-completed {
+  @apply border-success/10 text-success/80 bg-success/10;
+}
+
+.badge.badge-inactive,
+.badge.badge-danger,
+.badge.badge-rejected {
+  @apply border-danger/10 text-danger/80 bg-danger/10;
+}
+
+/* Badges */
+
+.badge.badge-primary {
+  @apply border-theme/10 text-theme/80 bg-theme/10;
+}
+
+.badge.badge-pending,
+.badge.badge-inprogress,
+.badge.badge-verification-pending {
+  @apply border-yellow-500/10 text-yellow-500/80 bg-yellow-500/10;
+}
+
+.badge.badge-cancelled {
+  @apply border-blue-500/10 text-blue-500/80 bg-blue-500/10;
+}
+
+.badge.badge-light-info,
+.badge.badge-todo {
+  @apply border-[#00cfe8]/10 text-[#00cfe8]/80 bg-[#00cfe8]/10;
+}
+
+.badge.badge-light-warning {
+  @apply border-orange-500/10 text-orange-400/80 bg-orange-500/10;
+}
+
+.badge.badge-light-default {
+  @apply border-[#848484]/10 text-[#848484]/80 bg-[#848484]/10 dark:bg-[#848484]/40;
+}
+
+.badge.badge-high {
+  @apply border-success/10 text-[#fa2d20]/80 bg-[#fa2d20]/10;
+}
+
+.badge.badge-medium {
+  @apply border-yellow-500/10 text-yellow-500/80 bg-yellow-500/10;
+}
+
+.badge.badge-low {
+  @apply border-blue-500/10 text-blue-500/80 bg-blue-500/10;
+}
+
+.badge.badge-on-track {
+  @apply border-success/10 text-[#dc3545]/80 bg-[#dc3545]/10;
+}
+
+.tag.badge-tag {
+  @apply border-success/10 text-white/80 bg-[#848484]/50 px-4 py-1.5 rounded-full text-sm;
+}
+
+.badge.badge-terminated {
+  @apply border-orange-500/10 text-orange-400/80 bg-orange-500/10;
+}
+
+.badge.badge-to-do {
+  @apply border-[#00cfe8]/10 text-[#00cfe8]/80 bg-[#00cfe8]/10;
+}
+
+/* Filters */
+.badge-filters {
+  @apply pb-2 text-info inline-flex items-center gap-2 cursor-pointer relative;
+}
+
+.badge-filters.active::before {
+  content: "";
+  @apply absolute bottom-0 left-0 right-0 border-b-2 border-theme w-full;
+}
+
+.badge-filters.active {
+  @apply text-theme;
+}
+
+.badge-filters .text {
+  @apply text-sm capitalize font-semiBold;
+}
+
+.badge-filters .value {
+  @apply inline-flex rounded-sm items-center justify-center text-sm w-[29px] h-[25px];
+}
+
+.badge-filters.active .value {
+  @apply bg-theme/10 text-theme/80;
+}
+
+.badge.badge-highest {
+  @apply border-success/10 text-[#fa2d20]/80 bg-[#fa2d20]/10;
+}

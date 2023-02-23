@@ -1,0 +1,52 @@
+.btn {
+  @apply min-w-[100px] h-[41px] inline-flex font-sans items-center justify-center text-center gap-1 px-4 py-[8px] rounded text-sm  hover:bg-opacity-90 transition-all;
+}
+
+.btn-primary {
+  @apply bg-theme border-solid border-theme text-white disabled:bg-dark-100 disabled:text-title-color;
+}
+
+.btn-primary.disabled {
+  @apply bg-dark-100 text-title-color border-dark-100;
+}
+
+.btn-outline {
+  @apply border border-solid border-theme bg-transparent text-theme hover:bg-theme hover:border-theme hover:text-white;
+}
+.btn-outline.disabled {
+  @apply bg-white text-title-color border-dark-100;
+}
+
+/* Action buttons */
+.btn-action .btn-act {
+  @apply p-0 m-0;
+}
+
+.btn-action .btn-act .btn-link {
+  @apply text-main px-3 py-1 rounded-sm hover:bg-theme/10 hover:text-theme gap-3 flex items-center justify-start w-full text-sm;
+}
+
+.btn-action .btn-act .btn-link span {
+  @apply first:w-[16px] first:h-[16px];
+}
+
+.btn-action .btn-act .btn.btn-popup {
+  @apply text-main px-3 py-2 h-auto rounded-sm bg-transparent hover:bg-theme/10 hover:text-theme gap-3 flex items-center justify-start w-full;
+}
+
+.btn-action .btn-act .btn.btn-popup.cancel {
+  @apply gap-x-2.5;
+}
+
+.btn-dropdown {
+  @apply text-main;
+}
+.table-tail table td .btn-action {
+  @apply flex flex-col gap-1;
+}
+.table-tail table td .btn-action .btn-act .btn.btn-popup span {
+  @apply mt-0;
+}
+.table-tail table td .btn-action .btn-act .btn.btn-popup {
+  @apply py-1;
+}

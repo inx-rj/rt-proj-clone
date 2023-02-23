@@ -1,0 +1,70 @@
+.table-tail {
+  @apply w-full;
+}
+
+.table-tail .mantine-Text-root {
+  @apply font-sans text-xs;
+}
+
+.table-tail table tr {
+  @apply bg-color;
+}
+
+.table-tail table th,
+.table-tail table td {
+  @apply font-sans border-color bg-color text-base break-words;
+}
+.table-tail table td span {
+  @apply text-sm -mt-1;
+}
+
+.table-tail table thead tr th {
+  @apply py-3 border-color text-sm font-semiBold text-main hover:bg-transparent;
+}
+
+.table-tail table thead tr th .mantine-Group-root {
+  @apply inline-flex;
+}
+
+.table-tail table tbody tr:last-of-type td {
+  @apply border-b-0;
+}
+.mantine-Table-root {
+  @apply text-info;
+}
+/* Pagination Button */
+
+.table-tail .mantine-Pagination-item {
+  @apply w-[35px] h-[35px];
+}
+
+.table-tail .mantine-Pagination-item[data-active="true"] {
+  @apply w-[35px] h-[35px] bg-theme/10 text-theme border-theme/10;
+}
+
+.table-tail .mantine-Pagination-item:disabled {
+  @apply w-[35px] h-[35px] bg-gray-200;
+}
+
+.table-tail .mantine-Pagination-item svg {
+  @apply w-[25px] h-[25px];
+}
+
+/* Scrollbar */
+.table-tail .mantine-ScrollArea-scrollbar[data-orientation="vertical"] {
+  @apply w-[8px];
+}
+
+.table-tail
+  .mantine-ScrollArea-root
+  .mantine-ScrollArea-scrollbar
+  .mantine-ScrollArea-thumb {
+  @apply bg-gray-300;
+}
+.table-tail > div > div {
+  @apply shadow-none bg-transparent;
+}
+
+.table-tail .mantine-ScrollArea-viewport .mantine-Table-root ~ div {
+  @apply hidden;
+}
