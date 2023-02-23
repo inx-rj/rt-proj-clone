@@ -115,7 +115,7 @@ const PhoneOtpForm = (props: PhoneOtpFormType) => {
                 </span>
               </p>
               <div className="mb-5">
-                <OtpInputField id="otp" name="otp" numInputs={4} />
+                <OtpInputField id="otp" name="otp" numInputs={6} />
                 <div className="flex items-center justify-center mt-5">
                   <p className="text-dark-400/70">
                     If you didn't received a code,
