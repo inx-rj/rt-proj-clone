@@ -1,0 +1,90 @@
+.form-react-select.form-control {
+  @apply p-0 border-0;
+}
+
+.form-react-select .r-select__control {
+  @apply border border-color bg-color rounded min-h-[41px];
+}
+
+.form-react-select .r-select__control.r-select__control--is-disabled {
+  @apply cursor-not-allowed bg-zinc-100 dark:bg-[#404040];
+}
+
+.form-react-select.is-invalid .r-select__control {
+  @apply border-danger;
+}
+
+.form-react-select .r-select__control input {
+  @apply focus:outline-0 focus:shadow-none focus:ring-0 focus:border-theme;
+}
+
+.form-react-select .r-select__control .r-select__placeholder {
+  @apply text-sm text-info;
+}
+
+.form-react-select .r-select__value-container {
+  @apply p-1 pl-2.5 justify-start;
+}
+
+.form-react-select .r-select__menu {
+  @apply shadow drop-shadow-md bg-color text-info overflow-hidden z-[5];
+}
+
+.form-react-select .r-select__single-value {
+  @apply text-sm text-center text-main;
+}
+
+.form-react-select .r-select__control.r-select__control--is-focused {
+  @apply border-theme shadow-none;
+}
+
+.form-react-select .r-select__menu-list {
+  @apply p-0;
+}
+
+.form-react-select .r-select__option {
+  @apply text-xs;
+}
+
+.form-react-select .r-select__option--is-selected {
+  @apply bg-theme;
+}
+
+.form-react-select .r-select__option--is-selected.r-select__option--is-focused {
+  @apply bg-theme;
+}
+
+.form-react-select .r-select__option--is-focused {
+  @apply bg-theme/10;
+}
+
+.form-react-select .r-select__option:active {
+  @apply bg-theme/10 text-theme;
+}
+
+.form-react-select .r-select__multi-value {
+  @apply bg-black/10 dark:bg-black text-black;
+}
+
+.form-react-select .r-select__multi-value__label {
+  @apply text-black;
+}
+
+.form-react-select .r-select__indicator-separator {
+  @apply border border-color bg-transparent;
+}
+
+.form-react-select .r-select__menu-notice {
+  @apply text-sm;
+}
+
+.form-react-select .r-select__indicator {
+  @apply text-info;
+}
+.form-react-select .r-select__dropdown-indicator {
+  @apply hover:text-desc-color;
+}
+
+.page-size-select .form-react-select .r-select__option {
+  @apply text-center;
+}

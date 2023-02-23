@@ -1,0 +1,108 @@
+.bg-body {
+  @apply bg-[#F5F5F5]  subpixel-antialiased  antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply text-main;
+}
+
+p {
+  @apply text-info;
+}
+
+/*  Title Color*/
+.text-main {
+  @apply text-title-color;
+}
+
+/*  Description Color */
+.text-info {
+  @apply text-desc-color;
+}
+
+/*  Background Color */
+.bg-color {
+  @apply bg-white;
+}
+
+/*  Border Color */
+.border-color {
+  @apply border-dark-100;
+}
+
+/* Card Css */
+.card {
+  @apply bg-color border-color text-info  border  rounded  p-4;
+}
+
+/* Card design like modal  */
+.card-modal {
+  @apply shadow-md drop-shadow-sm rounded-lg w-full max-w-[600px] basis-[100%] sm:basis-[600px] mx-auto xxl:p-14 lg:pt-8 lg:pb-10 lg:px-14 shrink-0 grow-0;
+}
+
+/* Sidebar css */
+.sidebar {
+  @apply max-w-[260px];
+}
+.mini .sidebar {
+  @apply max-w-[65px];
+}
+
+/* Common auth modal css  */
+.welcome-title {
+  @apply text-2xl text-main font-medium;
+}
+.welcome-desc {
+  @apply text-base text-info;
+}
+
+.mini .dashboard,
+.mini footer {
+  @apply pl-[65px];
+}
+
+.dashboard {
+  transition: padding-left 0.3s ease-in-out;
+  @apply pl-[260px];
+}
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 20px #fff inset;
+  -webkit-text-fill-color: #444444;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 20px #fff inset;
+  -webkit-text-fill-color: #444444;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.api-main .card {
+  @apply border-0;
+}
+.grey-btn {
+  @apply text-desc-color border-dark-100;
+}
+
+.bg-success {
+  @apply bg-success-bg
+}
+.bg-danger {
+  @apply bg-error-bg
+}
+.bg-warning {
+  @apply bg-warning-bg
+}

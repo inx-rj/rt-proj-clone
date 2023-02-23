@@ -1,0 +1,20 @@
+@import "./sidebar/sidebar.css";
+@import "./header/header.css";
+
+/* Form Css */
+@import "./button/button.css";
+@import "./form/input.css";
+@import "./form/select.css";
+@import "./form/misc.css";
+
+@import "./navigation/nav-card.css";
+@import "./table/table.css";
+@import "./utilities/popup.css";
+@import "./auth/auth.css";
+@import "./badge/badge.css";
+
+/*Toast CSS*/
+@import "./toast/toast.css";
+
+/* All CSS will import above this  */
+@import "./common/common.css";

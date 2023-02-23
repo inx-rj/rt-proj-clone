@@ -1,0 +1,29 @@
+.Toastify__progress-bar-theme--colored.Toastify__progress-bar--success {
+  @apply !bg-success;
+}
+.Toastify__progress-bar-theme--colored.Toastify__progress-bar--error {
+  @apply !bg-danger;
+}
+.Toastify__progress-bar-theme--colored.Toastify__progress-bar--warning {
+  @apply bg-warning;
+}
+
+.Toastify__toast-theme--colored.Toastify__toast--success {
+  @apply !text-dark-700 !bg-success-bg;
+}
+.Toastify__toast-theme--colored.Toastify__toast--error {
+  @apply !text-dark-700 !bg-error-bg;
+}
+
+.Toastify__toast-theme--colored.Toastify__toast--warning {
+  @apply !text-dark-700 !bg-warning-bg;
+}
+#root .Toastify__close-button {
+  @apply text-main;
+}
+.Toastify__toast-body {
+  @apply font-sans text-sm font-medium;
+}
+.Toastify__toast-body .Toastify__toast-icon {
+  @apply w-7;
+}

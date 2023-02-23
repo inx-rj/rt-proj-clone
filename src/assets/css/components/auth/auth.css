@@ -1,0 +1,31 @@
+.btn-outline.auth-disabled {
+  @apply bg-white text-dark-400 border-dark-300;
+}
+
+.auth-disabled .auth-icon {
+  @apply border rounded-full p-3 mb-2 text-dark-400 border-dark-400;
+}
+
+.auth-disabled h6 {
+  @apply text-dark-400;
+}
+
+.auth-disabled p {
+  @apply text-dark-400;
+}
+
+.btn-outline.auth-enabled {
+  @apply bg-white text-theme border-theme;
+}
+
+.auth-enabled .auth-icon {
+  @apply border rounded-full p-3 mb-2 text-theme border-theme;
+}
+
+.auth-enabled h6 {
+  @apply text-theme;
+}
+
+.auth-enabled p {
+  @apply text-theme;
+}

@@ -1,0 +1,217 @@
+.checkbox {
+  @apply relative my-1 text-left;
+}
+
+.checkbox.checkbox-inline {
+  @apply inline-block;
+}
+
+.checkbox label {
+  @apply cursor-pointer inline clear-both pl-[1px] text-sm text-main;
+}
+
+.checkbox label:not(:empty) {
+  @apply pl-2;
+}
+
+.checkbox label:before,
+.checkbox label:after {
+  content: "";
+  @apply absolute top-0 left-0;
+}
+
+.checkbox label:before {
+  @apply border border-gray-300 dark:border-gray-300/30 transition-all cursor-pointer bg-transparent w-[17px] h-[17px] rounded-sm top-[2px];
+}
+
+.checkbox input[type="checkbox"] {
+  @apply outline-0 invisible w-[17px] h-[17px] block m-0 float-left text-sm;
+}
+
+.checkbox input[type="checkbox"]:checked + label:before {
+  @apply bg-theme border-0;
+}
+
+.checkbox input[type="checkbox"]:checked + label:after {
+  @apply transform translate-x-[3px] translate-y-[6px] rotate-[-45deg] w-[12px] h-[6px] border-2 border-t-0 border-r-0 border-white dark:border-dark-800;
+}
+
+.checkbox input[type="checkbox"]:disabled + label {
+  @apply cursor-not-allowed text-gray-400;
+}
+
+.checkbox input[type="checkbox"]:disabled + label:before {
+  @apply border-gray-300 cursor-not-allowed;
+}
+
+.checkbox input[type="checkbox"]:disabled:checked + label:before {
+  @apply bg-gray-200;
+}
+
+.checkbox input[type="checkbox"]:disabled:checked + label:after {
+  @apply border-gray-400;
+}
+
+.radio {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  @apply my-0 mx-0;
+}
+
+.radio input:not(:checked),
+.radio input:checked {
+  @apply pointer-events-none left-0 overflow-hidden w-0 h-0 z-[-1] m-0 absolute opacity-0;
+}
+
+.radio input ~ label {
+  @apply pl-7 text-sm h-[17px] cursor-pointer relative inline-block text-main;
+}
+
+.radio input ~ label:before,
+.radio input ~ label:after {
+  content: "";
+  @apply rounded-full border-2 border-transparent left-0 w-[17px] h-[17px] absolute top-[1px];
+}
+
+.radio input ~ label:before {
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  transition: all 0.2s ease-in;
+}
+
+.radio input:not(:checked) ~ label:before {
+  transform: scale(0);
+  @apply transform scale-0;
+}
+
+.radio input:not(:checked) ~ label:after {
+  @apply border-2 border-gray-300 dark:border-gray-300/30;
+}
+
+.radio input:checked ~ label:before {
+  @apply transform scale-[0.5] bg-theme border-2 border-theme;
+}
+
+.radio input:checked ~ label:after {
+  @apply border-2 border-theme;
+}
+
+.radio input:disabled ~ label {
+  @apply pointer-events-none text-gray-400;
+}
+
+.radio input:disabled:not(:checked) ~ label:after {
+  @apply border-gray-300;
+}
+
+.radio input:disabled:checked ~ label:before {
+  @apply border-gray-300 bg-gray-300;
+}
+
+.radio input:disabled:checked ~ label:after {
+  @apply border-gray-300;
+}
+
+.switch {
+  @apply inline-flex items-center h-[15px];
+}
+
+.switch > input[type="checkbox"] {
+  @apply hidden;
+}
+
+.switch > label {
+  @apply top-0 w-[35px] relative h-0 cursor-pointer text-sm;
+}
+
+.switch > label::before {
+  content: "";
+  /*box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);*/
+  @apply w-[32px] top-0 transition-all duration-100 opacity-[0.3] absolute mt-[-8px] h-[16px] rounded-[8px] bg-gray-500;
+}
+
+.switch > label::after {
+  content: "";
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+  @apply w-[10px] h-[10px] transition-all absolute top-[-5px] left-[4px]  rounded-[16px] bg-white;
+}
+
+.switch > input[type="checkbox"]:checked + label::before {
+  @apply opacity-[1] bg-theme;
+}
+
+.switch > input[type="checkbox"]:checked + label::after {
+  @apply bg-white left-[19px];
+}
+
+.switch > input[type="checkbox"]:disabled + label {
+  @apply cursor-not-allowed pointer-events-none;
+}
+
+.switch > input[type="checkbox"]:disabled + label::before {
+  @apply opacity-[0.5] bg-gray-400;
+}
+
+.switch > input[type="checkbox"]:disabled:checked + label::before {
+  @apply opacity-[0.2] bg-gray-400;
+}
+
+.switch > input[type="checkbox"]:disabled:checked + label::after {
+  @apply bg-gray-400;
+}
+
+.switch > input[type="checkbox"]:disabled + label::after {
+  @apply bg-gray-300;
+}
+
+.switch > span {
+  @apply my-0 px-3 text-sm text-main;
+}
+
+.radio-group-wrap .radio-group {
+  @apply flex items-center justify-between gap-2;
+}
+
+.radio-group-wrap .radio-group .radio-input {
+  @apply w-full max-w-[50%] py-[9.9px] h-[41px] flex items-center justify-center text-sm border rounded border-gray-300 text-main  cursor-pointer;
+}
+
+.radio-group-wrap .radio-group .radio-input.is-invalid {
+  @apply border rounded;
+}
+
+.radio-group-wrap .radio-group .radio-input.active {
+  @apply bg-theme border-theme;
+}
+
+.radio-group-wrap .radio-group.disabled {
+  @apply cursor-not-allowed;
+}
+
+.radio-group-wrap .radio-group.disabled .radio-input {
+  @apply cursor-not-allowed bg-zinc-100;
+}
+
+.radio-group-wrap .radio-group.disabled .radio-input.active {
+  @apply opacity-60 cursor-not-allowed bg-theme;
+}
+
+/* Table active wiuth disble  */
+.switch.active-switch
+  > input[type="checkbox"]:disabled:checked
+  + label::before {
+  @apply bg-success opacity-100;
+}
+.switch.active-switch > input[type="checkbox"]:disabled:checked + label::after {
+  @apply bg-white;
+}
+.switch.inactive-switch > input[type="checkbox"]:disabled + label::before {
+  @apply bg-danger opacity-100;
+}
+.switch.inactive-switch > input[type="checkbox"]:disabled + label::after {
+  @apply bg-white;
+}

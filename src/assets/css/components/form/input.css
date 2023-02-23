@@ -1,0 +1,44 @@
+.form-label {
+  @apply text-sm block mb-2 text-main font-medium;
+}
+
+.form-control,
+.country-phone-input .PhoneInputInput {
+  @apply px-3 text-sm block w-full min-h-[40px] border border-dark-100 bg-color text-main dark:focus:text-dark-100 rounded focus:border-theme ring-0 outline-0 shadow-none focus:ring-0 disabled:bg-zinc-100 disabled:cursor-not-allowed disabled:dark:bg-[#404040];
+}
+
+.form-control::placeholder {
+  @apply capitalize text-info;
+}
+
+.form-control.is-invalid {
+  @apply border-danger mb-1;
+}
+
+.invalid-feedback {
+  @apply text-danger text-xs mt-1;
+}
+
+.form-control.file-upload-small {
+  @apply px-3;
+}
+
+.form-control.file-upload-small .fup-btn {
+  @apply absolute right-0 top-0 bottom-0 border border-theme rounded-tr rounded-br px-3 bg-theme text-white flex items-center justify-center text-xl;
+}
+
+/* Country Phone input  */
+.country-phone-input .PhoneInputCountry {
+  @apply border border-color rounded p-3;
+}
+
+.country-phone-input .PhoneInputCountryIcon--border,
+.country-phone-input .PhoneInputCountryIcon--focus {
+  @apply bg-transparent shadow-none;
+}
+.react-tel-input.country-phone-input .form-control {
+  @apply w-full border-color;
+}
+.react-tel-input.country-phone-input .flag-dropdown {
+  @apply border-color;
+}
