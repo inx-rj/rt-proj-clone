@@ -6,6 +6,7 @@ export const ActionTypes = {
   NEW_PROJECT_SOD: 'NEW_PROJECT_SOD'
 };
 
+
 export const StatusTypes = [
   'ACTIVE',
   'INACTIVE',
@@ -25,3 +26,5 @@ export const StatusTypes = [
   'COMPLETED',
   'VERIFICATION PENDING'
 ];
+
+const demo = () =>"";
